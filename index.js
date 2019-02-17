@@ -20,4 +20,7 @@ const currentImageListing = () => {
 
 const retrieveImagesFromJSON = (json) => {
   const imageCount = json.length;
+  for (var i = 0; i < imageCount; i = i + 1){
+    console.log(json[i]);
+  }
 };
