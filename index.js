@@ -18,6 +18,6 @@ const currentImageListing = () => {
     });
 };
 
-const retrieveImagesFromJSON = (body) => {
-  const imageCount = body.length;
+const retrieveImagesFromJSON = (json) => {
+  const imageCount = json.length;
 };
