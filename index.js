@@ -19,5 +19,5 @@ const currentImageListing = () => {
 };
 
 const retrieveImagesFromJSON = (body) => {
-  console.log(body);
+  const imageCount = body.length;
 };
