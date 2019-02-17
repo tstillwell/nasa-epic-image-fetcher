@@ -1,10 +1,19 @@
-const request = require('request');
-const endpoint = 'https://epic.gsfc.nasa.gov/api/natural';
+const request = require('request-promise');
+
+const options = {
+    uri: 'https://epic.gsfc.nasa.gov/api/natural',
+    headers: {
+        'User-Agent': 'epic-api-fetcher'
+    },
+    json: true
+};
 
 const currentImageListing = () => {
-  request(endpoint, function (error, response, body) {
-    console.log('error:', error);
-    console.log('statusCode:', response && response.statusCode);
-    console.log('body:', body);
-  });
+  request(options)
+    .then(function (body) {
+      console.log(body);
+    })
+    .catch(function (err) {
+      throw err;
+    });
 };
