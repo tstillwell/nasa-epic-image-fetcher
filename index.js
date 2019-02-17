@@ -11,9 +11,13 @@ const options = {
 const currentImageListing = () => {
   request(options)
     .then(function (body) {
-      console.log(body);
+      retrieveImagesFromJSON(body);
     })
     .catch(function (err) {
       throw err;
     });
+};
+
+const retrieveImagesFromJSON = (body) => {
+  console.log(body);
 };
