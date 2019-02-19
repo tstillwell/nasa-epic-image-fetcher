@@ -20,6 +20,7 @@ const currentImageListing = () => {
 
 const retrieveImagesFromJSON = (json) => {
   const imageCount = json.length;
+  const baseUrl = 'https://epic.gsfc.nasa.gov/archive/natural';
   for (var i = 0; i < imageCount; i = i + 1){
     console.log(json[i]);
   }
