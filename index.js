@@ -22,7 +22,6 @@ const retrieveImagesFromJSON = (json) => {
   const imageCount = json.length;
   const baseUrl = 'https://epic.gsfc.nasa.gov/archive/natural';
   for (var i = 0; i < imageCount; i = i + 1){
-    let date = json[i].date;
-    console.log(json[i]);
+    let date = json[i].date.substring(0, 10);
   }
 };
