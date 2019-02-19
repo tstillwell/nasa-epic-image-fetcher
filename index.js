@@ -24,5 +24,6 @@ const retrieveImagesFromJSON = (json) => {
   for (var i = 0; i < imageCount; i = i + 1){
     let date = json[i].date.substring(0, 10);
     let year = date.substring(0, 4);
+    let month = date.substring(5, 7);
   }
 };
