@@ -27,7 +27,7 @@ const retrieveImagesFromJSON = (json) => {
     let month = date.substring(5, 7);
     let day = date.substring(8, 10);
     let imageName = json[i].image;
-    let imagePath = "/" + year + "/" + month + "/" + day + "/";
+    let imagePath = "/" + year + "/" + month + "/" + day + "/"+ imageName;
     console.log(imagePath);
   }
 };
