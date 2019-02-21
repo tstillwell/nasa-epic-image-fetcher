@@ -1,5 +1,6 @@
 const request = require('request-promise');
 const fs = require('fs');
+const downloadDir = './downloads';
 
 const options = {
     uri: 'https://epic.gsfc.nasa.gov/api/natural',
