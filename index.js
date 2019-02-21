@@ -1,4 +1,5 @@
 const request = require('request-promise');
+const fs = require('fs');
 
 const options = {
     uri: 'https://epic.gsfc.nasa.gov/api/natural',
@@ -32,3 +33,4 @@ const retrieveImagesFromJSON = (json) => {
     console.log(imageURI);
   }
 };
+
