@@ -2,6 +2,10 @@ const request = require('request-promise');
 const fs = require('fs');
 const downloadDir = './downloads';
 
+if (!fs.existsSync(downloadDir)){
+    fs.mkdirSync(downloadDir);
+}
+
 const options = {
     uri: 'https://epic.gsfc.nasa.gov/api/natural',
     headers: {
