@@ -3,7 +3,7 @@ const fs = require('fs');
 const downloadDir = './downloads';
 
 if (!fs.existsSync(downloadDir)){
-    fs.mkdirSync(downloadDir);
+  fs.mkdirSync(downloadDir);
 }
 
 const options = {
