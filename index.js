@@ -7,11 +7,11 @@ if (!fs.existsSync(downloadDir)){
 }
 
 const options = {
-    uri: 'https://epic.gsfc.nasa.gov/api/natural',
-    headers: {
-        'User-Agent': 'epic-api-fetcher'
-    },
-    json: true
+  uri: 'https://epic.gsfc.nasa.gov/api/natural',
+  headers: {
+    'User-Agent': 'epic-api-fetcher'
+  },
+  json: true
 };
 
 const currentImageListing = () => {
