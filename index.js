@@ -2,9 +2,11 @@ const request = require('request-promise');
 const fs = require('fs');
 const downloadDir = './downloads';
 
-if (!fs.existsSync(downloadDir)){
-  fs.mkdirSync(downloadDir);
-}
+const addBaseFolder = () => {
+  if (!fs.existsSync(downloadDir)){
+    fs.mkdirSync(downloadDir);
+  }
+};
 
 const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
@@ -39,3 +41,5 @@ const retrieveImagesFromJSON = (json) => {
     console.log(imageURI);
   }
 };
+
+fetchImages();
