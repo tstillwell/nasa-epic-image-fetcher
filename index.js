@@ -14,7 +14,7 @@ const options = {
   json: true
 };
 
-const currentImageListing = () => {
+const fetchImages = () => {
   request(options)
     .then(function (body) {
       retrieveImagesFromJSON(body);
