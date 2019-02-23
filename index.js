@@ -35,7 +35,7 @@ const retrieveImagesFromJSON = (json) => {
     let imageName = json[i].image + ".png";
     let imagePath = "/" + year + "/" + month + "/" + day + "/png/" + imageName;
     let imageURI = baseUrl + imagePath;
+    request(imageURI).pipe(fs.createWriteStream(downloadDir + "/" + imageName));
     console.log(imageURI);
   }
 };
-
