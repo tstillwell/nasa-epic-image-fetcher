@@ -17,6 +17,7 @@ const options = {
 };
 
 const fetchImages = () => {
+  addBaseFolder();
   request(options)
     .then(function (body) {
       retrieveImagesFromJSON(body);
