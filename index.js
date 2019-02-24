@@ -28,13 +28,13 @@ const fetchImages = () => {
 };
 
 const retrieveImagesFromJSON = (json) => {
+  const date = json[0].date.substring(0, 10);
+  const year = date.substring(0, 4);
+  const month = date.substring(5, 7);
+  const day = date.substring(8, 10);
   const imageCount = json.length;
   const baseUrl = 'https://epic.gsfc.nasa.gov/archive/natural';
   for (var i = 0; i < imageCount; i = i + 1){
-    let date = json[i].date.substring(0, 10);
-    let year = date.substring(0, 4);
-    let month = date.substring(5, 7);
-    let day = date.substring(8, 10);
     let imageName = json[i].image + ".png";
     let imagePath = "/" + year + "/" + month + "/" + day + "/png/" + imageName;
     let imageURI = baseUrl + imagePath;
