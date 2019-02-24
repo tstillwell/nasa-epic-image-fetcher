@@ -8,6 +8,12 @@ const addBaseFolder = () => {
   }
 };
 
+const addDateFolder = (date) => {
+  if (!fs.existsSync(downloadDir + "/" + date)){
+    fs.mkdirSync(downloadDir + "/" + date);
+  }
+};
+
 const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
   headers: {
@@ -29,6 +35,7 @@ const fetchImages = () => {
 
 const retrieveImagesFromJSON = (json) => {
   const date = json[0].date.substring(0, 10);
+  addDateFolder(date);
   const year = date.substring(0, 4);
   const month = date.substring(5, 7);
   const day = date.substring(8, 10);
@@ -38,7 +45,7 @@ const retrieveImagesFromJSON = (json) => {
     let imageName = json[i].image + ".png";
     let imagePath = "/" + year + "/" + month + "/" + day + "/png/" + imageName;
     let imageURI = baseUrl + imagePath;
-    request(imageURI).pipe(fs.createWriteStream(downloadDir + "/" + imageName));
+    request(imageURI).pipe(fs.createWriteStream(downloadDir + "/" + date + "/" + imageName));
     console.log(imageURI);
   }
 };
