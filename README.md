@@ -1,6 +1,6 @@
 # nasa-epic-image-fetcher
 
-Downloads latest image of Earth retrieved by NASA's DSCOVR
+Downloads latest images of Earth retrieved by NASA's DSCOVR
 Earth Polychromatic Imaging Camera (EPIC) instrument
 
 NASA EPIC API documentation
