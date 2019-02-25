@@ -2,15 +2,9 @@ const request = require('request-promise');
 const fs = require('fs');
 const downloadDir = './downloads';
 
-const addBaseFolder = () => {
-  if (!fs.existsSync(downloadDir)){
-    fs.mkdirSync(downloadDir);
-  }
-};
-
-const addDateFolder = (date) => {
-  if (!fs.existsSync(downloadDir + "/" + date)){
-    fs.mkdirSync(downloadDir + "/" + date);
+const addDir = (dirPath) => {
+  if (!fs.existsSync(dirPath)){
+    fs.mkdirSync(dirPath);
   }
 };
 
@@ -23,7 +17,7 @@ const options = {
 };
 
 const fetchImages = () => {
-  addBaseFolder();
+  addDir(downloadDir);
   request(options)
     .then(function (body) {
       retrieveImagesFromJSON(body);
@@ -35,7 +29,7 @@ const fetchImages = () => {
 
 const retrieveImagesFromJSON = (json) => {
   const date = json[0].date.substring(0, 10);
-  addDateFolder(date);
+  addDir(downloadDir + "/" + date);
   const year = date.substring(0, 4);
   const month = date.substring(5, 7);
   const day = date.substring(8, 10);
