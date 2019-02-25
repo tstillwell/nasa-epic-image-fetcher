@@ -43,7 +43,7 @@ const retrieveImagesFromJSON = (json) => {
   const baseUrl = 'https://epic.gsfc.nasa.gov/archive/natural';
   for (var i = 0; i < imageCount; i = i + 1){
     let imageName = json[i].image + ".png";
-    let imagePath = "/" + year + "/" + month + "/" + day + "/png/" + imageName;
+    let imagePath = `/${year}/${month}/${day}/png/${imageName}`;
     let imageURI = baseUrl + imagePath;
     let filePath = downloadDir + "/" + date + "/" + imageName
     request(imageURI).pipe(fs.createWriteStream(filePath));
