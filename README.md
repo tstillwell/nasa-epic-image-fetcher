@@ -15,7 +15,7 @@ To download the latest images run
 
 > node index.js
 
-NASA EPIC API documentation
+## NASA EPIC API documentation
 
 > https://api.nasa.gov/api.html#EPIC
 
