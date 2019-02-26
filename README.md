@@ -2,7 +2,7 @@
 
 Downloads latest images of Earth retrieved by NASA's 
 Deep Space Climate Observatory
-Earth Polychromatic Imaging Camera (EPIC) instrument
+Earth Polychromatic Imaging Camera (EPIC) instrument.
 
 ## Installation
 clone this repo then run
