@@ -7,7 +7,7 @@ Earth Polychromatic Imaging Camera (EPIC) instrument.
 ## Installation
 clone this repo then run
 
-> npm install
+`npm install`
 
 ## Usage
 
