@@ -13,7 +13,7 @@ clone this repo then run
 
 To download the latest images run
 
-> node index.js
+`node index.js`
 
 ## NASA EPIC API documentation
 
