@@ -27,6 +27,9 @@ const fetchImages = () => {
     });
 };
 
+const fetchImagesByDate = () => {
+}
+
 const retrieveImagesFromJSON = (json) => {
   const date = json[0].date.substring(0, 10);
   addDir(downloadDir + "/" + date);
