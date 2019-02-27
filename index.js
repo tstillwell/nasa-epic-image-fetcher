@@ -27,6 +27,13 @@ const fetchImages = () => {
 };
 
 const fetchImagesByDate = (date) => {
+  const options = {
+  uri: 'https://epic.gsfc.nasa.gov/api/natural',
+  headers: {
+    'User-Agent': 'epic-api-fetcher'
+  },
+  json: true
+  };
   if (!validDate(date)) {
     console.log('Invalid date. Please enter date in YYYY-MM-DD format');
   }
