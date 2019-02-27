@@ -8,15 +8,14 @@ const addDir = (dirPath) => {
   }
 };
 
-const options = {
+const fetchImages = () => {
+  const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
   headers: {
     'User-Agent': 'epic-api-fetcher'
   },
   json: true
-};
-
-const fetchImages = () => {
+  };
   addDir(downloadDir);
   request(options)
     .then(function (body) {
@@ -30,6 +29,9 @@ const fetchImages = () => {
 const fetchImagesByDate = (date) => {
   if (!validDate(date)) {
     console.log('Invalid date. Please enter date in YYYY-MM-DD format');
+  }
+  else {
+    
   }
 }
 
