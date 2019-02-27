@@ -27,7 +27,7 @@ const fetchImages = () => {
     });
 };
 
-const fetchImagesByDate = () => {
+const fetchImagesByDate = (date) => {
 }
 
 const retrieveImagesFromJSON = (json) => {
