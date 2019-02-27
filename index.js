@@ -28,6 +28,9 @@ const fetchImages = () => {
 };
 
 const fetchImagesByDate = (date) => {
+  if (!validDate(date)) {
+    console.log('Invalid date. Please enter date in YYYY-MM-DD format');
+  }
 }
 
 const retrieveImagesFromJSON = (json) => {
