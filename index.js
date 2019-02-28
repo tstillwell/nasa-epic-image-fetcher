@@ -68,4 +68,8 @@ const retrieveImagesFromJSON = (json) => {
   }
 };
 
+const validDate = (dateString) => {
+  // return true if dateString is in YYYY-MM-DD format
+}
+
 fetchImages();
