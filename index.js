@@ -39,7 +39,12 @@ const fetchImagesByDate = (date) => {
     console.log('Invalid date. Please enter date in YYYY-MM-DD format');
   }
   else {
-    
+    request(options)
+      .then(function (body) {
+      })
+      .catch(function (err) {
+        throw err;
+      });
   }
 }
 
