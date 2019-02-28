@@ -1,5 +1,6 @@
 const request = require('request-promise');
 const fs = require('fs');
+const moment = require('moment');
 const downloadDir = './downloads';
 
 const addDir = (dirPath) => {
@@ -36,7 +37,7 @@ const fetchImagesByDate = (date) => {
   json: true
   };
   if (!validDate(date)) {
-    console.log('Invalid date. Please enter date in YYYY-MM-DD format');
+    throw 'Invalid date. Please enter date in YYYY-MM-DD format';
   }
   else {
     request(options)
