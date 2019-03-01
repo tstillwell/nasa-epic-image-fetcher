@@ -15,6 +15,10 @@ To download the latest images run
 
 `npm run fetch-latest`
 
+To use as a node module
+
+`const epicFetcher = require([path]/index);`
+
 ## NASA EPIC API documentation
 
 > https://api.nasa.gov/api.html#EPIC
