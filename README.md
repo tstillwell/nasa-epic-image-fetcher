@@ -19,6 +19,13 @@ To use as a node module
 
 `const epicFetcher = require([path]/index);`
 
+There are two functions available
+
+`epicFetcher.fetchLatestImages()`
+
+Downloads the most recently published images
+
+
 ## NASA EPIC API documentation
 
 > https://api.nasa.gov/api.html#EPIC
