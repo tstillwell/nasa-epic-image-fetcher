@@ -73,4 +73,5 @@ const validDate = (dateString) => {
   return moment(dateString, 'YYYY-MM-DD', true).isValid();
 }
 
-fetchLatestImages();
+
+module.exports = { fetchLatestImages, fetchImagesByDate };
