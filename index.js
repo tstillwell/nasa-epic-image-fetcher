@@ -9,7 +9,7 @@ const addDir = (dirPath) => {
   }
 };
 
-const fetchImages = () => {
+const fetchLatestImages = () => {
   const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
   headers: {
@@ -73,4 +73,4 @@ const validDate = (dateString) => {
   return moment(dateString, 'YYYY-MM-DD', true).isValid();
 }
 
-fetchImages();
+fetchLatestImages();
