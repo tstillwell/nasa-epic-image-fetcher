@@ -17,7 +17,7 @@ To download the latest images run
 
 To use as a node module
 
-`const epicFetcher = require([path]/index);`
+`const epicFetcher = require('./nasa-epic-image-fetcher');`
 
 There are two functions available
 
