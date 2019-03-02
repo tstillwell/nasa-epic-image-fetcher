@@ -23,8 +23,12 @@ There are two functions available
 
 `epicFetcher.fetchLatestImages()`
 
-Downloads the most recently published images
+> Downloads the most recently published images
 
+`epicFetcher.fetchImagesByDate(date)`
+
+where date is a date string in the format 'YYYY-MM-DD'
+> Downloads available images for the specified date
 
 ## NASA EPIC API documentation
 
