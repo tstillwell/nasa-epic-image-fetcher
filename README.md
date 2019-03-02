@@ -9,11 +9,13 @@ clone this repo then run
 
 `npm install`
 
-## Usage
+## Script Usage
 
 To download the latest images run
 
 `npm run fetch-latest`
+
+## Module Usage
 
 To use as a node module
 
