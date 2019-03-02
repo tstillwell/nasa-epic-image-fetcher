@@ -15,7 +15,7 @@ To download the latest images run
 
 `npm run fetch-latest`
 
-By derfault, images are saved to a 'downloads' folder
+By default, images are saved to a 'downloads' folder
 in the project directory.
 
 ## Module Usage
