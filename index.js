@@ -9,7 +9,7 @@ const addDir = (dirPath) => { // create dir if it does not exist
   }
 };
 
-const fetchLatestImages = () => {
+const fetchLatestImages = () => { // Download current images listed by API
   const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
   headers: {
