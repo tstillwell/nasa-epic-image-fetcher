@@ -15,10 +15,10 @@ To download the latest images run
 
 `npm run fetch-latest`
 
-By default, images are saved to a 'downloads' folder
+By default, images are saved to a 'downloads' directory
 in the project directory.
 
-This folder can be changed by modifying downloadDir in index.js
+This directory can be changed by modifying downloadDir in index.js
 
 ## Module Usage
 
