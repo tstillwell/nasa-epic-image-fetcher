@@ -3,7 +3,7 @@ const fs = require('fs');
 const moment = require('moment');
 const downloadDir = './downloads';
 
-const addDir = (dirPath) => {
+const addDir = (dirPath) => { // create dir if it does not exist
   if (!fs.existsSync(dirPath)){
     fs.mkdirSync(dirPath);
   }
