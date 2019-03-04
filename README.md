@@ -18,7 +18,7 @@ To download the latest images run
 By default, images are saved to a 'downloads' directory
 in the project directory.
 
-This directory can be changed by modifying downloadDir in index.js
+This directory can be changed by modifying `downloadDir` in index.js
 
 ## Module Usage
 
