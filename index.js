@@ -14,7 +14,7 @@ const fetchLatestImages = () => {
   };
   addDir(downloadDir);
   request(options)
-    .then(function (body) {
+    .then((body) => {
       retrieveImagesFromJSON(body);
     })
     .catch(function (err) {
