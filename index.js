@@ -17,7 +17,7 @@ const fetchLatestImages = () => {
     .then((body) => {
       retrieveImagesFromJSON(body);
     })
-    .catch(function (err) {
+    .catch((err) => {
       throw err;
     });
 };
