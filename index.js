@@ -3,12 +3,6 @@ const fs = require('fs');
 const moment = require('moment');
 const downloadDir = './downloads';
 
-const addDir = (dirPath) => { // create dir if it does not exist
-  if (!fs.existsSync(dirPath)){
-    fs.mkdirSync(dirPath);
-  }
-};
-
 const fetchLatestImages = () => { // Download current images listed by API
   const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
@@ -65,6 +59,12 @@ const retrieveImagesFromJSON = (json) => {
     let filePath = `${downloadDir}/${date}/${imageName}`;
     request(imageURI).pipe(fs.createWriteStream(filePath));
     console.log(imageURI);
+  }
+};
+
+const addDir = (dirPath) => { // create dir if it does not exist
+  if (!fs.existsSync(dirPath)){
+    fs.mkdirSync(dirPath);
   }
 };
 
