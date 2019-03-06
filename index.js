@@ -37,7 +37,7 @@ const fetchImagesByDate = (date) => {
   }
   else {
     request(options)
-      .then(function (body) {
+      .then((body) => {
         retrieveImagesFromJSON(body);
       })
       .catch(function (err) {
