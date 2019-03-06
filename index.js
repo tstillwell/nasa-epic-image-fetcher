@@ -40,9 +40,9 @@ const fetchImagesByDate = (date) => {
       .then((body) => {
         retrieveImagesFromJSON(body);
       })
-      .catch(function (err) {
-        throw err;
-      });
+    .catch((err) => {
+      throw err;
+    });
   }
 }
 
