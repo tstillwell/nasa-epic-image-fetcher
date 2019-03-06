@@ -7,9 +7,7 @@ const fetchLatestImages = () => {
   // Download current images listed by API
   const options = {
   uri: 'https://epic.gsfc.nasa.gov/api/natural',
-  headers: {
-    'User-Agent': 'epic-api-fetcher'
-  },
+  headers: {'User-Agent': 'epic-api-fetcher'},
   json: true
   };
   addDir(downloadDir);
