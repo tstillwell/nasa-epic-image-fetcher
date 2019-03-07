@@ -37,7 +37,7 @@ const fetchImagesByDate = (date) => {
       })
       .catch((err) => {
         throw err;
-    });
+      });
   }
 }
 
