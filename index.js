@@ -22,9 +22,8 @@ const fetchLatestImages = () => {
 
 const fetchImagesByDate = (date) => { 
   // Download images for date from API
-  const uriString = `https://epic.gsfc.nasa.gov/api/natural/date/${date}`;
   const options = {
-    uri: uriString,
+    uri: `https://epic.gsfc.nasa.gov/api/natural/date/${date}`,
     headers: {'User-Agent': 'epic-api-fetcher'},
     json: true
   };
