@@ -24,9 +24,9 @@ const fetchImagesByDate = (date) => {
   // Download images for date from API
   const uriString = `https://epic.gsfc.nasa.gov/api/natural/date/${date}`;
   const options = {
-  uri: uriString,
-  headers: {'User-Agent': 'epic-api-fetcher'},
-  json: true
+    uri: uriString,
+    headers: {'User-Agent': 'epic-api-fetcher'},
+    json: true
   };
   if (!validDate(date)) {
     throw 'Invalid date. Please enter date in YYYY-MM-DD format';
