@@ -28,7 +28,7 @@ const fetchImagesByDate = (date) => {
     json: true
   };
   if (!validDate(date)) {
-    throw 'Invalid date. Please enter date in YYYY-MM-DD format';
+    throw 'Invalid date. Please specify date in YYYY-MM-DD format';
   }
   else {
     request(options)
