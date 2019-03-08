@@ -60,7 +60,7 @@ const retrieveImagesFromJSON = (json) => {
   }
 };
 
-const addDir = (dirPath) => { 
+const addDir = (dirPath) => {
   // create dir if it does not exist
   if (!fs.existsSync(dirPath)){
     fs.mkdirSync(dirPath);
