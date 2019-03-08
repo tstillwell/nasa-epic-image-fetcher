@@ -20,7 +20,7 @@ const fetchLatestImages = () => {
     });
 };
 
-const fetchImagesByDate = (date) => { 
+const fetchImagesByDate = (date) => {
   // Download images for date from API
   const options = {
     uri: `https://epic.gsfc.nasa.gov/api/natural/date/${date}`,
