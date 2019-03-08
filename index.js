@@ -44,7 +44,7 @@ const fetchImagesByDate = (date) => {
 const retrieveImagesFromJSON = (json) => {
   // Save each image listed in EPIC API json response
   const date = json[0].date.substring(0, 10);
-  addDir(downloadDir + "/" + date);
+  addDir(downloadDir + '/' + date);
   const year = date.substring(0, 4);
   const month = date.substring(5, 7);
   const day = date.substring(8, 10);
