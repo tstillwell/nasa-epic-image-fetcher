@@ -10,7 +10,6 @@ const fetchLatestImages = () => {
     headers: {'User-Agent': 'epic-api-fetcher'},
     json: true
   };
-  addDir(downloadDir);
   request(options)
     .then((body) => {
       retrieveImagesFromJSON(body);
