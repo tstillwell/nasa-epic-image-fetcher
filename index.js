@@ -1,6 +1,7 @@
 const request = require('request-promise');
 const fs = require('fs');
 const moment = require('moment');
+
 const downloadDir = './downloads';
 
 const fetchLatestImages = () => { 
