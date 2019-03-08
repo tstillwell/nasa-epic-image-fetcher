@@ -4,7 +4,7 @@ const moment = require('moment');
 
 const downloadDir = './downloads';
 
-const fetchLatestImages = () => { 
+const fetchLatestImages = () => {
   // Download current images listed by API
   const options = {
     uri: 'https://epic.gsfc.nasa.gov/api/natural',
