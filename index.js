@@ -70,6 +70,6 @@ const addDir = (dirPath) => {
 const validDate = (dateString) => {
   // return true if dateString is in YYYY-MM-DD format
   return moment(dateString, 'YYYY-MM-DD', true).isValid();
-}
+};
 
 module.exports = { fetchLatestImages, fetchImagesByDate };
