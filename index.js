@@ -39,7 +39,7 @@ const fetchImagesByDate = (date) => {
         throw err;
       });
   }
-}
+};
 
 const retrieveImagesFromJSON = (json) => {
   // Save each image listed in EPIC API json response
